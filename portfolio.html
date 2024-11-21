@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel pour présenter mes compétences, mes projets et mon expérience.">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Police Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Louis Cordier</h1>
+            <p>Etudiant en Bachelor IT - 1ère année</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section À propos -->
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>J'ai 26 ans, je suis titulaire d'une L3 de géographie et aménagement, et un master 1 en Urbanisme et aménagement. J'habite entre Aix-en-Provence et Marseille et me suis réorienté vers un bachelor IT à l'école La Plateforme à Marseille.</p>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills">
+            <h2>Mes compétences</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Développement Web</h3>
+                    <p>J'ai commencé à faire des projets au départ de la formation. Je possède un niveau débutant en langage HMTL et CSS.</p>
+                </div>
+                <div class="skill">
+                    <h3>Cybersécurité</h3>
+                    <p>L'utilisation de machines virtuelles sur l'application VMWare Workstation pour coder via le terminal Windows ou Libux (Debian)</p>
+                </div>
+                <div class="skill">
+                    <h3>Gestion de projet</h3>
+                    <p>Par mon expérience passée d'étudiant en urbanisme, j'ai eu à réaliser de nombreux travaux de groupe. J'ai appris cette année à utiliser des sites comme trello, et ai utilisé excel, googles docs, canva pour travailler à plusieurs en simultané. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects">
+            <h2>Mes réalisations</h2>
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project">
+                    <img src="capture_3_fansites.png" alt="Aperçu projet Fansite">
+                    <img src="capture_site_kygo.png" alt="Aperçu site Kygo">
+                    <h3>Fansite</h3>
+                    <p> Travail de groupe pour créer un fansite de trois objets différents, avec menu commun  et page d'accueil générale </p>
+                </div>
+                <!-- Projet 2 -->
+                <div class="project">
+                    <img src="capture site bloompetals.png" alt="Aperçu projet Site bloompetals">
+                    <h3>Job 1</h3>
+                    <p>Travail individuel création site web sur le thème ; fleuriste</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+                <h2>Contactez-moi</h2>
+                <p>Pour toute question ou collaboration, n'hésitez pas à m'envoyer un message via ce formulaire :</p>
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Sujet du message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-method">Préférence de contact</label>
+                        <select id="contact-method" name="contact-method" required>
+                            <option value="email">E-mail</option>
+                            <option value="phone">Téléphone</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numéro de téléphone (facultatif)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Louis Cordier. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
