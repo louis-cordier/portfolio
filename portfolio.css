@@ -10,7 +10,7 @@ body {
 
 /* En-tête (Hero) */
 .hero {
-    background: linear-gradient(to right, #864ffe, #5000fe);
+    background: linear-gradient(to right, #a07fea, #17156e);
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -20,6 +20,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 
 .menu {
     display: flex;
@@ -47,6 +48,23 @@ h2 {
     margin-bottom: 1rem;
 }
 
+----------------------------------TEST POUR CENTRER IMAGE PROFIL -----------------------------
+/* .image {
+ 
+    vertical-align: middle; /* middle, top, bottom */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Hauteur de la fenêtre */
+} */
+
+---------------------------------FIN DU TEST---------------------------------------------------
 /* Compétences */
 .skills-grid {
     display: grid;
@@ -57,7 +75,7 @@ h2 {
 .skill {
     background: #ffffff;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
